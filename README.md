@@ -8,7 +8,6 @@ Classes for children to understand Phyton and the basic concept of programming.
 Turtle graphics are a popular way of introducing programming to kids I use this example for the kids to understand the basic concepts of programming virtual turtles can be programmed to move around the screen it is interesting for them because it is like a game because the turtle draws lines as it moves. The "turtle" could look like the turtle animal, an arrow, or be invisible. The kids can write turtle programs that draw beautiful shapes and learn to program at the same time.
 
 The original Turtle software was developed by Wally Feurzig and Seymour Papert in 1966.
-
 This tutorial only explains Python's turtle.py module. It does not explain the Python programming language.
 
 # Quickstart
@@ -24,7 +23,6 @@ Move forward 100 steps.
 The turtle has ended up where it started.
 With these seven steps, 
 the turtle draws a square. 
-
 
 The from turtle import * 
 is an instruction needed at the beginning of all of your turtle programs. 
