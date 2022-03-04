@@ -120,7 +120,7 @@ for i in range(30):
     undo()
 	
 	
-# pencolor(), pencolor(color), pencolor((red, green, blue)), pencolor(red, green, blue)
+ pencolor(), pencolor(color), pencolor((red, green, blue)), pencolor(red, green, blue)
 
 The pencolor() function sets the color of the line that the turtle draws. The pencolor() function can be passed a string of the color, such as 'red' or 'black'. Or, the pencolor() function can be passed an "RGB color tuple" (see the Color section).
 
