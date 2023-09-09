@@ -3,6 +3,8 @@ Classes for children to understand Phyton and the basic concept of programming.
 
 (Comming Back with Python Classes and giving soon to new children!)
 
+Pyhton with pychart for children control a drone with Python
+
 ## Django
 
 Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
