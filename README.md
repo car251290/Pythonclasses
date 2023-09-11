@@ -5,6 +5,12 @@ Classes for children to understand Phyton and the basic concept of programming.
 
 Pyhton with pychart for children control a drone with Python
 
+### Distance
+Required. The distance to fly forward in cm. Has to be between 20 and 500.
+
+### Degrees
+Required. The number of degrees to rotate. Has to be between 1 and 360.
+
 ## EXAMPLES: 
 import tello
 
