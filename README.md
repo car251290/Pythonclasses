@@ -6,12 +6,8 @@ Classes for children to understand Phyton and the basic concept of programming.
 Pyhton with pychart for children control a drone with Python
 
 <div>
- <img style="width: 15%;height:15%;" src="https://www.pngfind.com/pngs/m/685-6854970_react-logo-png-png-download-logo-png-reactjs.png">
- <img style="width: 15%;height:15%;" src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"> 
- <img style="width: 15%;height:15%;" src="https://static.cdnlogo.com/logos/c/27/c.svg"> 
- <img style="width: 10%;height:10%;" src="https://w7.pngwing.com/pngs/452/24/png-transparent-js-logo-node-logos-and-brands-icon.png"> 
- <img style=width:15%;height:15% src="https://miro.medium.com/v2/resize:fit:792/1*lJ32Bl-lHWmNMUSiSq17gQ.png">
- <img style=width:15%;height:15% src="https://kinsta.com/es/wp-content/uploads/sites/8/2018/05/PHP_Feature-Image-1024x536.jpg">
+ <img style="width: 15%;height:15%;" src="https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=800%2C800&ssl=1">
+
  </div>
  
 
