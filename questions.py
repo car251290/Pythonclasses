@@ -10,6 +10,7 @@ def ask_questions(name):
     print(f"Your favorite food is {answer2}.")
     print(f"You live in {answer3}.")
     # Ask for X or O and respond accordingly
+    #if statement how will be used 
     XO = input("Choose X  OR O: ").strip().upper()
 
     if XO == "X":
@@ -21,3 +22,12 @@ def ask_questions(name):
 
 name = "Javier"
 ask_questions(name)
+## this example will be for Tuesday 
+def explain_for_loop():
+    for i in range(5):
+        print("Learning Python!")
+    arr = ["apple", "banana", "cherry"]
+    for i in arr :
+        print(i)
+explain_for_loop()
+
