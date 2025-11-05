@@ -72,3 +72,17 @@ if __name__ == "__main__":
 
         monthly_interest = calculate_monthly_interest(monthly_income, annual_rate, investment_months)
         print(f"The interest on a monthly income of {monthly_income} at an annual rate of {annual_rate}% for {investment_months} months is: {monthly_interest}")
+
+
+
+
+        ## class
+class InterestCalculator:
+    def __init__(self, principal, rate, time):
+        self.principal = principal
+        self.rate = rate
+        self.time = time
+
+    def calculate_simple_interest(self):
+        interest = (self.principal * self.rate * self.time) / 100
+        return interest
