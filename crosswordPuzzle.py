@@ -71,9 +71,13 @@ def solve(crossword, words, index):
 
 
 def crosswordPuzzle(crossword, words):
+    # convert words string to list
     words = words.split(";")
+    #convers crossword rows to mutable list 
     crossword = [list(row) for row in crossword]
+    # start backtracking 
     solve(crossword, words, 0)
+    # Convert crossword back to list string
     return [''.join(row) for row in crossword]
 
 
