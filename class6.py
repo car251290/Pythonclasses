@@ -1,17 +1,21 @@
-def fun2(arr):
-    result = []
-    for i in arr:
-        if i % 2 == 0:  # Check if the number is divisible by 2
-            result.append(i)  # Add the number to the result list
+import random
 
-    # Further filter the result to include only specific numbers
-    final_result = []
-    for i in result:
-        if i in [2, 6, 10]:  # Keep only 2, 6, and 10
-            final_result.append(i)
+secret = random.randint(1, 10)
+tries = 5
+
+while tries > 0:
+    guess = int(input("Guess the number (1-10): "))
     
-    return final_result
+    if guess < secret:
+        print("Too low!")
+    if guess > secret:
+        print("Too high!")
+    if guess == secret:
+        print("Correct! You guessed the number!")
+        break
+    
+    tries -= 1
+    print("Tries left:", tries)
 
-# Example usage
-arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-print(fun2(arr))  # Output: [2, 6, 10]
+if guess != secret:
+    print("Game over! The number was", secret)
