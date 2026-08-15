@@ -1,4 +1,6 @@
 import random
+#import the webbrowser module to open websites
+import webbrowser
 
 # Dictionary of responses
 responses = {
@@ -17,7 +19,7 @@ jokes = [
 
 
 # make facts of the world cup 
-# variables 
+# variables it an array => array 
 world_cup_facts = [
     "The FIFA World Cup was first held in 1930.",
     "Brazil has won the most World Cups, with a total of 5 titles.",
@@ -76,6 +78,61 @@ all_questions = [
         "answer": "william shakespeare"
     }
 ]
+# implement the web 
+# directory of websites
+websites = {
+    "google": "https://www.google.com",
+    "youtube": "https://www.youtube.com",
+    "wikipedia": "https://www.wikipedia.org",
+    "python": "https://www.python.org",
+    "scratch": "https://scratch.mit.edu",
+    "world cup": "https://www.fifa.com"
+}
+
+# function to open websites based on user input
+def open_website(user_input):
+    user_input = user_input.lower().strip()
+
+    if "youtube" in user_input or "let watch a video" in user_input:
+        webbrowser.open("https://www.youtube.com")
+        return "Yes! Let me take you to YouTube." 
+
+    elif "google" in user_input or "I want to search something" in user_input:
+        webbrowser.open("https://www.google.com")
+        return "Yes! Let me take you to Google."
+
+    elif "python" in user_input or "learn programming" in user_input:
+        webbrowser.open("https://www.python.org")
+        return "Yes! Let me take you to Python."
+
+    elif "scratch" in user_input or "Learning scratch" in user_input:
+        webbrowser.open("https://scratch.mit.edu")
+        return "Yes! Let me take you to Scratch."
+
+    return None
+    
+def get_response(user_input):
+    global current_question, current_answer
+
+    # FIRST check websites
+    website_response = open_website(user_input)
+
+    if website_response != None:
+        return website_response
+
+    # THEN continue with your other chatbot commands
+
+    if "question" in user_input.lower():
+        current_question, current_answer = ask_response_question()
+        return current_question
+
+    if "math" in user_input.lower():
+        return get_random_math()
+
+    if "joke" in user_input.lower():
+        return get_random_jokes()
+
+    return random.choice(responses["default"])
 
 # variables that remember the current question and answer
 # the none help the computer to know that is not any current question or answer
@@ -158,8 +215,12 @@ def get_response(user_input):
 
     #variables
     user_input = user_input.lower()
-    #if "jokes" in user_input:
-     #   return get_random_jokes()
+    # webside check
+    website_response = open_website(user_input)
+    #check if the website response is not None, if it is not None then return the website response
+    if website_response != None:
+        return website_response
+    
     #foorloops
     for key in responses.keys():
         if key in user_input:
